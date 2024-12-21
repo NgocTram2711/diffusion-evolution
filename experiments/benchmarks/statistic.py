@@ -102,7 +102,7 @@ def get_all_records(num_experiments):
     all_records = dict()
 
     benchmarks = [DiffEvo_benchmark, CMAES_benchmark, OpenES_benchmark, PEPG_benchmark]
-    num_steps = [25, 25, 1000, 25]
+    num_steps = [10, 10, 400, 10]
 
     for benchmark, step in zip(benchmarks, num_steps):
         name = benchmark.__name__

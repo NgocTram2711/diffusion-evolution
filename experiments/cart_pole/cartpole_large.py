@@ -74,7 +74,7 @@ if __name__ == '__main__':
         
         all_reward_history.append(reward_history)
         
-        if i == 0:
+        if i == 255:
             print('saving the data from the first experiment ...')
 
             # save the data

@@ -67,7 +67,7 @@ def plot_distance_histogram(x0_trace, population_trace, t, ax=None, total_step=1
     
     T = total_step - t
 
-    plt.hist(project_to_1d(x0_trace[t]).numpy(), bins=32, density=True, alpha=0.75, range=(-3,3), label='$\hat{x}_0$', color='#E93A01')
+    plt.hist(project_to_1d(x0_trace[t]).numpy(), bins=32, density=True, alpha=0.75, range=(-3,3), label=r'$\hat{x}_0$', color='#E93A01')
     plt.hist(project_to_1d(population_trace[t]).numpy(), bins=32, density=True, alpha=0.5, range=(-3,3), label='$x$', color='#6F6E6E')
 
     # remove x, y ticks

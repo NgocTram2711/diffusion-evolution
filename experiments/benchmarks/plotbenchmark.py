@@ -20,19 +20,19 @@ if __name__ == '__main__':
     plt.figure(figsize=(12, 1 + num_benchmark * 2))
 
     # DiffEvo
-    record = DiffEvo_benchmark(objs, num_steps=25, row=0, total_row=num_benchmark, plot=True, num_pop=512)
+    record = DiffEvo_benchmark(objs, num_steps=10, row=0, total_row=num_benchmark, plot=True, num_pop=512)
     torch.save(record, './data/diff_evo.pt')
 
     # CMAES
-    record = CMAES_benchmark(objs, num_steps=25, row=1, total_row=num_benchmark, limit_val=100, plot=True)
+    record = CMAES_benchmark(objs, num_steps=10, row=1, total_row=num_benchmark, limit_val=100, plot=True)
     torch.save(record, './data/cmaes.pt')
 
     # OpenES
-    record = OpenES_benchmark(objs, num_steps=1000, row=2, total_row=num_benchmark, plot=True)
+    record = OpenES_benchmark(objs, num_steps=400, row=2, total_row=num_benchmark, plot=True)
     torch.save(record, './data/openes.pt')
 
     # PEPG
-    record = PEPG_benchmark(objs, num_steps=25, row=3, total_row=num_benchmark, plot=True)
+    record = PEPG_benchmark(objs, num_steps=10, row=3, total_row=num_benchmark, plot=True)
     torch.save(record, './data/pepg.pt')
 
     # save the plot

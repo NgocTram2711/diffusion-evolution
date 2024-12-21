@@ -108,7 +108,7 @@ if __name__ == '__main__':
     obj_names = ["rosenbrock", "beale", "himmelblau", "ackley", "rastrigin"]
     
     plt.figure(figsize=(12, 3))
-    record = DiffEvo_benchmark(obj_names, num_steps=100, row=0, total_row=1, num_pop=512, scaling=4, plot=True)
+    record = DiffEvo_benchmark(obj_names, num_steps=25, row=0, total_row=1, num_pop=512, scaling=4, plot=True)
     torch.save(record, './data/diff_evo.pt')
 
     plt.tight_layout()
