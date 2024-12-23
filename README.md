@@ -1,8 +1,11 @@
 # Diffusion Evolution
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 We are temporarily removing the code due to license and patent conflicts. We will restore it once these conflicts are resolved.
 =======
+=======
+>>>>>>> parent of d281685 (Remove all files related to the Diffusion Evolution project due to license and patent conflicts. This includes the main codebase, experiments, and associated resources. The project will be restored once these issues are resolved.)
 This repo is for our preprint [Diffusion models are evolutionary algorithms](https://arxiv.org/abs/2410.02543), which anayatically proves that diffusion models are a type of evolutionary algorithm. This equivalence allows us to leverage advancements in diffusion models for evolutionary algorithm tasks, including accelerated sampling and latent space diffusion.
 
 ![](./experiments/2d_models/two_peaks/images/framwork.jpg)
@@ -29,9 +32,21 @@ pip install .
 
 Some benchmark codes requires dependencies, can be installed via:
 ```bash
+<<<<<<< HEAD
 pip install cma
 ```
 
+=======
+pip install cma gym pygame tqdm matplotlib numpy==1.26.4 
+```
+
+Also Pytorch version 2.5 or above is required
+```bash
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
+
+
+>>>>>>> parent of d281685 (Remove all files related to the Diffusion Evolution project due to license and patent conflicts. This includes the main codebase, experiments, and associated resources. The project will be restored once these issues are resolved.)
 The benchmark fitness functions can be found here: https://github.com/bhartl/foobench 
 
 ## Typical Usage
@@ -102,4 +117,7 @@ trace = torch.stack(trace)
       url={https://arxiv.org/abs/2410.02543}, 
 }
 ```
+<<<<<<< HEAD
 >>>>>>> parent of 4fee2b3 (Merge branch 'HH_Dev')
+=======
+>>>>>>> parent of d281685 (Remove all files related to the Diffusion Evolution project due to license and patent conflicts. This includes the main codebase, experiments, and associated resources. The project will be restored once these issues are resolved.)

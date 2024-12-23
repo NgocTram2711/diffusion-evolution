@@ -3,6 +3,7 @@ from cmaes import CMAES_benchmark
 from diff_evo import DiffEvo_benchmark
 from pepg import PEPG_benchmark
 from openes import OpenES_benchmark
+from methods import *
 import torch
 import numpy as np
 import random
